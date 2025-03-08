@@ -45,7 +45,7 @@ body {
 .nav-profile-img {
     width: 80px !important; /* Set a fixed size */
     height: 80px !important;
-    border-radius: 50% !important; /* Forces a circular shape */
+    border-radius: 50px !important; /* Forces a circular shape */
     object-fit: cover !important;
     border: 2px solid white !important;
 }
