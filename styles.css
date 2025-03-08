@@ -43,14 +43,12 @@ body {
 
 /* Engaging Navigation Bar */
 .nav-profile-img {
-    width: 80%; /* Adjust size as needed */
-    height: 80px;
-    border-radius: 50%; /* Makes it circular */
-    margin-right: 10px; /* Adds spacing between image and text */
-    object-fit: cover; /* Ensures the image fits well */
-    border: 2px solid white; /* Optional: Adds a border for better visibility */
+    width: 80px !important; /* Set a fixed size */
+    height: 80px !important;
+    border-radius: 50% !important; /* Forces a circular shape */
+    object-fit: cover !important;
+    border: 2px solid white !important;
 }
-
 .navbar {
     background: linear-gradient(90deg, #004466, #0088cc);
     padding: 15px 20px;
