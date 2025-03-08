@@ -43,9 +43,9 @@ body {
 
 /* Engaging Navigation Bar */
 .nav-profile-img {
-    width: 80px !important; /* Set a fixed size */
-    height: 80px !important;
-    border-radius: 50px !important; /* Forces a circular shape */
+    width: 40px !important; /* Set a fixed size */
+    height: 40px !important;
+    border-radius: 50px; /* Forces a circular shape */
     object-fit: cover !important;
     border: 2px solid white !important;
 }
