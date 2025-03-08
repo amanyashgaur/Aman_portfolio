@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('image.webp') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+.hero p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Engaging Navigation Bar */
+.navbar {
+    background: linear-gradient(90deg, #004466, #0088cc);
+    padding: 15px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-dark .navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s;
+}
+.navbar-dark .navbar-brand:hover {
+    color: #ffcc00;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Skills Section - Redesigned */
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px;
+}
+.skill-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 30%;
+}
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+.skill-icon {
+    font-size: 40px;
+    color: #007acc;
+    margin-bottom: 15px;
+}
+.skill-box h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.skill-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Expandable Project Section */
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.project:hover {
+    transform: translateY(-5px);
+}
+.project-title {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-content {
+    display: none;
+    padding: 15px;
+    margin-top: 10px;
+    border-top: 2px solid #007acc;
+}
+.project img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding : 5px;
+}
+.project-content a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 40px 0;
+}
+.skill-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 22%;
+    min-width: 250px;
+    margin: 10px;
+}
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+.skill-icon {
+    font-size: 40px;
+    color: #007acc;
+    margin-bottom: 15px;
+}
+.skill-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.skill-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* JavaScript for Expanding Projects 
+<script>
+document.querySelectorAll('.project-title').forEach(item => {
+    item.addEventListener('click', () => {
+        let content = item.nextElementSibling;
+        content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+    });
+});
+</script>*/

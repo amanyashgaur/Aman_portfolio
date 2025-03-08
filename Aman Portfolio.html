@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Gaur - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Aman Gaur</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="container text-center text-white">
+            <h1 class="display-4">Hi, I'm Aman Gaur</h1>
+            <p class="lead">Software Developer | Web Developer | Financial Analyst</p>
+        </div>
+    </header>
+    
+    <section id="about" class="container py-5">
+        <h2>About Me</h2>
+        <p>I am an IT professional with a Master’s in Information Technology and a Bachelor's in Computer Applications. Specializing in Java, HTML, CSS, JavaScript, and database management, I have hands-on experience in developing scalable applications. Passionate about problem-solving and innovation, I thrive in collaborative environments and continuously explore emerging technologies to drive impactful solutions.</p>
+    </section>
+    
+    <section id="projects" class="container py-5">
+        <h2>Projects</h2>
+        <div class="project" onclick="toggleProject(this)">
+            <div class="project-title">Satsang Attendance App <span>+</span></div>
+            <div class="project-content">
+                <div class="image-group">
+                    <img src="satsang1.jpg" alt="Satsang Attendance App Screenshot" class="project-img" style="height : 600px;width:300px;padding-right: 30px;">
+                    <img src="satsang2.jpg" alt="Satsang Attendance App Screenshot" class="project-img" style="height : 600px;width:300px;padding-right: 30px;">
+                    <img src="satsang3.jpg" alt="Satsang Attendance App Screenshot" class="project-img" style="height : 600px;width:300px;">
+                </div>
+                <ul style="list-style-type:disc;">
+                    <li>Developed a mobile application to streamline attendance tracking for Baroda Satsang events.</li>
+                    <li>Implemented QR Code-based scanning system for efficient check-in and data logging.</li>
+                    <li>Integrated Google Sheets API to store and manage attendance records in real-time.</li>
+                    <li>Designed a user-friendly interface with Flutter, ensuring smooth navigation and accessibility.</li>
+                </ul>               
+                <p><strong>Technologies Used:</strong>  Flutter, Dart, Firebase, Google Sheets, QR Code Scanning</p>
+            </div>
+        </div>
+        <div class="project" onclick="toggleProject(this)">
+            <a href="https://ssrfngo.in/" target="_blank" class="btn btn-primary">View Project</a>
+            <div class="project-title">Sukham Saarthi Foundation NGO Website <span>+</span></div>
+            <div class="project-content">
+                <div class="image-group">
+                    <img src="ssrfngo1.jpg" alt="SSRF NGO Website Screenshot" class="project-img">
+                    <img src="ssrfngo2.jpg" alt="SSRF NGO Website Screenshot" class="project-img">
+                </div>
+                <ul style="list-style-type:disc;">
+                    <li>Developed and deployed a responsive and user-friendly website for an NGO. </li>
+                    <li>Implemented features such as [e.g., donation integration, customer Query / Feedback, event updates, etc.].  </li>
+                    <li>Enhanced user experience through a mobile-first approach and ensured seamless navigation on desktops, 
+                        tablets, and smartphones.  </li>
+                </ul>
+                <p><strong>Technologies Used:</strong>  HTML, CSS, JavaScript, Bootstrap, WordPress  </p>
+            </div>
+        </div>
+        <div class="project" onclick="toggleProject(this)">
+            <a href="https://rollingstock-production.up.railway.app" target="_blank" class="btn btn-primary">View Project</a>
+            <div class="project-title">Rolling Stock Maintenance System <span>+</span></div>
+            <div class="project-content">
+                <div class="image-group">
+                    <img src="rollingstock1.jpg" alt="Rolling Stock Maintenance System Screenshot" class="project-img">
+                    <img src="rollingstock2.jpg" alt="Rolling Stock Maintenance System Screenshot" class="project-img" style="height : 600px;width:300px;">
+                </div>
+                <ul style="list-style-type:disc;">
+                    <li>Developed a comprehensive software solution to manage and optimize maintenance operations of rolling 
+                        stock such as passenger coaches and wagons.</li>
+                    <li>Implemented features such as [Live Charts Display / Generating interactive reports / Session management].  </li>
+                    <li>Ensured the safe, reliable, and efficient operation of rolling stock through proactive maintenance strategies.</li>
+                </ul>
+                <p><strong>Technologies Used:</strong>  Java (JSP, Servlet), MySQL, jQuery, JavaScript, Bootstrap, Google Charts, Maven, Docker</p>
+            </div>
+        </div>
+        <div class="project" onclick="toggleProject(this)">
+            <a href="http://librarymanagementsystem-production-b9e5.up.railway.app" target="_blank" class="btn btn-primary">View Project</a>
+            <div class="project-title">Library Management System <span>+</span></div>
+            <div class="project-content">
+                <div class="image-group">
+                    <img src="library1.jpg" alt="Library Management System Screenshot" class="project-img">
+                    <img src="library2.jpg" alt="Library Management System Screenshot" class="project-img">
+                </div>
+                <ul style="list-style-type:disc;">
+                    <li>Designed to manage books, patrons, and transactions for borrowing and returning, with a focus on improving 
+                        library efficiency and offering intuitive interfaces for administrators and users.</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> JSP / Servlet, HTML / CSS, Bootstrap, MYSQL, javascript</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="container py-5">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <div class="skill-icon">💻</div>
+                <h3>Programming Languages</h3>
+                <p><strong>Languages:</strong> Java (JSP, Servlet), HTML, CSS, JavaScript, Dart</p>
+            </div>
+            <div class="skill-box">
+                <div class="skill-icon">🗄️</div>
+                <h3>Database Management</h3>
+                <p><strong>Databases:</strong> MySQL, Oracle</p>
+                <p><strong>Tools:</strong> MySQL Workbench, Xampp</p>
+            </div>
+            <div class="skill-box">
+                <div class="skill-icon">⚙️</div>
+                <h3>Frameworks & Tools</h3>
+                <p><strong>Technologies:</strong> jQuery, React, Maven, Bootstrap, Google Charts, Flutter</p>
+                <p><strong>Development Tools:</strong> Git, VS Code, Chrome Dev Tools</p>
+                <p><strong>IDEs & Code Editors:</strong> IntelliJ IDEA, VS Code, Eclipse, NetBeans,</p>
+            </div>
+            <div class="skill-box">
+                <div class="skill-icon">🤝</div>
+                <h3>Professional Skills</h3>
+                <p>Strong communication, teamwork, and project development skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container py-5">
+        <h2>Contact</h2>
+        <p>Email: amanyashgaur@gmail.com</p>
+        <p>Phone: +91 9725015374</p> 
+        <p>linkedin: <a href="https://www.linkedin.com/in/aman-gaur-249282269/" target="_blank">https://www.linkedin.com/in/aman-gaur-249282269/</a>
+    </section>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Aman Gaur | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function toggleProject(element) {
+            let content = element.querySelector('.project-content');
+            content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
